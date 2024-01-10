@@ -1,0 +1,18 @@
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/racc-1.7.3/ext/racc/cparse
+/usr/share/rvm/rubies/ruby-2.7.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1atvnd1 sitelibdir\=./.gem.20240105-9326-1atvnd1 clean
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1atvnd1 sitelibdir\=./.gem.20240105-9326-1atvnd1
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1atvnd1 sitelibdir\=./.gem.20240105-9326-1atvnd1 install
+/usr/bin/install -m 0755 cparse.so ./.gem.20240105-9326-1atvnd1/racc
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1atvnd1 sitelibdir\=./.gem.20240105-9326-1atvnd1 clean

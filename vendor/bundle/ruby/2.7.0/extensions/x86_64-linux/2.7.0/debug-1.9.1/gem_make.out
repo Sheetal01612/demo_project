@@ -1,0 +1,19 @@
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/debug-1.9.1/ext/debug
+/usr/share/rvm/rubies/ruby-2.7.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1jwvyvd sitelibdir\=./.gem.20240105-9326-1jwvyvd clean
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1jwvyvd sitelibdir\=./.gem.20240105-9326-1jwvyvd
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1jwvyvd sitelibdir\=./.gem.20240105-9326-1jwvyvd install
+/usr/bin/install -m 0755 debug.so ./.gem.20240105-9326-1jwvyvd/debug
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1jwvyvd sitelibdir\=./.gem.20240105-9326-1jwvyvd clean

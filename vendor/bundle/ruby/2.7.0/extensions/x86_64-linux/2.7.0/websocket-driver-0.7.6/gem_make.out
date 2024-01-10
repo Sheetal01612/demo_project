@@ -1,0 +1,18 @@
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/usr/share/rvm/rubies/ruby-2.7.5/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1tq1us5 sitelibdir\=./.gem.20240105-9326-1tq1us5 clean
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1tq1us5 sitelibdir\=./.gem.20240105-9326-1tq1us5
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1tq1us5 sitelibdir\=./.gem.20240105-9326-1tq1us5 install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20240105-9326-1tq1us5
+
+current directory: /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240105-9326-1tq1us5 sitelibdir\=./.gem.20240105-9326-1tq1us5 clean

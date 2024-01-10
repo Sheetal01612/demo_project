@@ -1,0 +1,50 @@
+<h2>Sign up</h2>
+<%= form_with model: @user, url: sign_up_path do |form| %>
+   <div class="mb-3"> 
+      <label for="email"> Email
+        <%= form.email_field :email, class: "form-control", required: true %>
+        <% if form.object.errors[:email].any? %>
+          <div class="error">
+            <%= form.object.errors.full_messages_for(:email).join(', ') %>
+          </div>
+        <% end %>
+      </label>
+   </div>
+
+   <div class="mb-3"> 
+      <label for="password"> Password
+        <%= form.password_field :password, class: "form-control", required: true %>
+        <% if form.object.errors[:password].any? %>
+          <div class="error">
+            <%= form.object.errors.full_messages_for(:password).join(', ') %>
+          </div>
+        <% end %>
+      </label>
+   </div>
+
+   <div class="mb-3"> 
+      <label for="password_confirmation"> Password Confirmation
+        <%= form.password_field :password_confirmation, class: "form-control", required: true %>
+        <% if form.object.errors[:password_confirmation].any? %>
+          <div class="error">
+            <%= form.object.errors.full_messages_for(:password_confirmation).join(', ') %>
+          </div>
+        <% end %>
+      </label>
+   </div>
+
+   <div class="mb-3"> 
+      <label for="role"> role
+        <%= form.text_field :role, class: "form-control", required: true %>
+        <% if form.object.errors[:role].any? %>
+          <div class="error">
+            <%= form.object.errors.full_messages_for(:role).join(', ') %>
+          </div>
+        <% end %>
+      </label>
+   </div>
+
+   <div class="mb-3">
+      <%= form.submit "Sign Up", class: "btn btn-primary" %>
+   </div>
+<% end %>

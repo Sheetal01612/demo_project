@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Rails App</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      /* background-image: url('<%= asset_path('image2.jpeg') %>'); */
+      background-image: url('/assets/image4.jpg'); 
+      background-size: cover; /* Experiment with different values if needed */
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    h1, p {
+      color: white;
+    }
+
+    p {
+      text-align: center; 
+    }
+
+    h1:hover, p:hover {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <%= render 'shared/navbar' %>
+  <p>Welcome, <%= current_user.email %></p>
+</body>
+</html>

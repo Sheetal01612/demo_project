@@ -1,0 +1,36 @@
+make[1]: Entering directory '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ext/sqlite3/tmp/x86_64-linux-gnu/ports/sqlite3/3.44.2/sqlite-autoconf-3440200'
+ /usr/bin/mkdir -p '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib'
+ /bin/bash ./libtool   --mode=install /usr/bin/install -c   libsqlite3.la '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib'
+libtool: install: /usr/bin/install -c .libs/libsqlite3.lai /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib/libsqlite3.la
+libtool: install: /usr/bin/install -c .libs/libsqlite3.a /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib/libsqlite3.a
+libtool: install: chmod 644 /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib/libsqlite3.a
+libtool: install: x86_64-linux-gnu-ranlib /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib/libsqlite3.a
+libtool: finish: PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/acer/.nvm/versions/node/v18.17.1/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/usr/share/rvm/gems/ruby-2.7.5/bin:/usr/share/rvm/gems/ruby-2.7.5@global/bin:/usr/share/rvm/rubies/ruby-2.7.5/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/share/rvm/bin:/home/acer/.rvm/bin:/home/acer/.rvm/bin:/home/acer/.rvm/bin:/home/acer/.rvm/bin:/sbin" ldconfig -n /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+ /usr/bin/mkdir -p '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/bin'
+  /bin/bash ./libtool   --mode=install /usr/bin/install -c sqlite3 '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/bin'
+libtool: install: /usr/bin/install -c sqlite3 /home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/bin/sqlite3
+ /usr/bin/mkdir -p '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/include'
+ /usr/bin/install -c -m 644 sqlite3.h sqlite3ext.h '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/include'
+ /usr/bin/mkdir -p '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/share/man/man1'
+ /usr/bin/install -c -m 644 sqlite3.1 '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/share/man/man1'
+ /usr/bin/mkdir -p '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib/pkgconfig'
+ /usr/bin/install -c -m 644 sqlite3.pc '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ports/x86_64-linux-gnu/sqlite3/3.44.2/lib/pkgconfig'
+make[1]: Leaving directory '/home/acer/Desktop/vs_code_project/demo_project/vendor/bundle/ruby/2.7.0/gems/sqlite3-1.7.0/ext/sqlite3/tmp/x86_64-linux-gnu/ports/sqlite3/3.44.2/sqlite-autoconf-3440200'

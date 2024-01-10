@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Rails App</title>
+  <style>
+    /* Add your navbar styles here */
+    nav {
+      background-color: #f1c40f;  /* Navbar background color */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Navbar box shadow */
+      padding: 30px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 50px;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <% @categories.each do |category| %>
+      <a href="<%= category_index_path(category) %>"><%= category.name %></a>
+    <% end %>
+  </nav>
+</body>
+</html>
+
