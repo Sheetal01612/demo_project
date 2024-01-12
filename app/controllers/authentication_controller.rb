@@ -1,7 +1,6 @@
 class AuthenticationController < ApplicationController
     # before_action :authorize_request, except: :login
   
-    # POST /auth/login
     def new
     end
   
@@ -13,7 +12,14 @@ class AuthenticationController < ApplicationController
           time = Time.now + 24.hours.to_i
           reset_session
           session[:current_user_id] = @user.id
-          redirect_to dashboard_index_path, notice: "Signed in."
+          case @user.role
+          when "buyer"
+            redirect_to dashboard_index_path, notice: "Signed in."
+          when "seller"
+            redirect_to create_category_path
+          when "admin"
+            # redirect_to dashboard_index_path, notice: "Signed in."
+          end
         else
           flash.now[:alert] = "Incorrect email or password."
           render :new, status: :unprocessable_entity

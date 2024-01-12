@@ -1,0 +1,49 @@
+<!-- app/views/categories/show.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products in Category: <%= @category.name %></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 20px;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    .product-container {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product-description, .product-price {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Products in Category: <%= @category.name %></h1>
+
+  <% @products.each do |product| %>
+    <div class="product-container">
+      <p class="product-title"><%= product.title %></p>
+      <p class="product-description"><%= product.description %></p>
+      <p class="product-price">Price: <%= product.price %></p>
+    </div>
+  <% end %>
+</body>
+</html>

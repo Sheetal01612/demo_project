@@ -2,13 +2,13 @@
 <html>
 <head>
   <title>Your Rails App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <style>
     body {
       margin: 0;
       padding: 0;
-      /* background-image: url('<%= asset_path('image2.jpeg') %>'); */
       background-image: url('/assets/image4.jpg'); 
-      background-size: cover; /* Experiment with different values if needed */
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: 100vh;
@@ -25,10 +25,66 @@
     h1:hover, p:hover {
       color: green;
     }
+
+    .sidenav {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #fff; /* Navbar background color */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    /* Sidebar links */
+    .sidenav a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+      cursor: pointer; /* Add cursor style for better UX */
+    }
+
+    /* Links on mouse-over */
+    .sidenav a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+
+    /* Page content. Adjust the margin-left value based on the width of your sidebar */
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+      .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidenav a {float: left;}
+      div.content {margin-left: 0;}
+    }
+
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+      .sidenav a {
+        text-align: center;
+        float: none;
+      }
+    }
   </style>
 </head>
 <body>
   <%= render 'shared/navbar' %>
-  <p>Welcome, <%= current_user.email %></p>
+  <div class="sidenav">
+    <% @categories.each do |category| %>
+      <a href="<%= category_path(category) %>"><%= category.name %></a>
+    <% end %>
+  </div>
 </body>
 </html>

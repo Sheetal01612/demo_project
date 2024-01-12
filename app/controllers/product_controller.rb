@@ -1,23 +1,42 @@
 class ProductController < ApplicationController
+
+  def new
+    @product = Product.new
+  end
   
   def create
-    unless current_user.role == 'buyer'
-      product = Product.create(product_params)
-      if product.save
-        render json: product, status: :ok
-      end
+    @product = Product.new(product_params)
+  
+    if @product.save
+      redirect_to product_index_path, notice: 'Product was successfully created.'
+    else
+      render :new
     end
   end
 
-  # def index
-    
-  # end
+  def index
+    @products = Product.all
+  end
+  
+  def update
+    if @product.update(product_params)
+      redirect_to @product, notice: 'Product was successfully updated.'
+    else
+      render :edit
+    end
+  end
 
-
+  def destroy
+    if @product.destroy
+      redirect_to @product, notice: 'Product was successfully updated.'
+    else
+      render :edit
+    end
+  end
+  
   private
 
   def product_params
-    params.permit(:title, :description, :price, :category_id)
+    params.permit(:title, :description, :price, :category_id, :image)
   end
-  
 end

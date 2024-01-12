@@ -1,13 +1,22 @@
 class CategoryController < ApplicationController
-  def create
-    category = Category.create(category_params)
-    if category.save
-      render json: category, status: :ok
-    end 
+  
+  def new
+    @category = Category.new
   end
-
-  def index
-    @categories = Category.all
+  
+  def create
+    @category = Category.new(category_params)
+  
+    if @category.save
+      redirect_to create_product_path(category_id: @category.id), notice: 'Category created successfully!'
+    else
+      render :new
+    end
+  end
+  
+  def show
+    @category = Category.find_by_id(params[:id])
+    @products = @category.products
   end
 
   private
